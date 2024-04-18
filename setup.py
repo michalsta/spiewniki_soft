@@ -9,7 +9,7 @@ here = pathlib.Path(__file__).parent.resolve()
 
 
 setup(
-    name="spiewniki",
+    name="spiewnik",
     version="0.0.1",
     description="",
     #    long_description=(here / 'README.md').read_text(encoding='utf-8'),
@@ -32,8 +32,8 @@ setup(
     keywords="",
     packages=find_packages(),
     python_requires=">=3.6",
-    install_requires=[],
+    install_requires=["pypdf", "reportlab"],
     scripts=glob.glob("tools/*.py"),
-    package_dir={"spiewniki": "spiewniki"},
+    package_dir={"spiewnik": "spiewnik"},
 #    package_data={"spiewniki": ["data/*.csv"]},
 )
