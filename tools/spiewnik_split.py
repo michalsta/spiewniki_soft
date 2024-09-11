@@ -3,9 +3,9 @@ import argparse
 from pathlib import Path
 
 
-parser = argparse.ArgumentParser(description="compile songbook")
+parser = argparse.ArgumentParser(description="Split songbook into separate pdfs with songs")
 parser.add_argument("input", help="Input pdf to split")
-parser.add_argument("-o", "--output", required=True, type=Path)
+parser.add_argument("-o", "--output", help="Output dir", required=True, type=Path)
 args = parser.parse_args()
 
 import pypdf
